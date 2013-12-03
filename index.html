@@ -1,28 +1,18 @@
-<html lang="en" ng-app="dlApp">
-<head>
-	
-	<body ng-controller="LandscapeController">
-		
-	
-		<div class='row'>
-			<div>
-				<div>
-					<p>Digital Landscapes: {{totalKm}}</p>
-				</div>
-			</div>
-			<div class='col-lg-9' id='map_canvas' style='height: 480px;'></div>
-		</div>
+<body ng-controller="LandscapeController">
+
+<google-map center="center" draggable="true" zoom="zoom" markers="markers" mark-click="true" style="height: 400px"></google-map>
 
 
-   		<script src="http://maps.googleapis.com/maps/api/js?sensor=false&language=en"></script>
-		<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.0.2/angular.min.js"></script>
-	    <script src="lib/jquery.js"></script>
-	    <script src="lib/bootstrap.js"></script>
-	    
-		<script src="lib/angular.js"></script>
-		<script src="lib/app.js"></script>
-		
-		
-		<script src="js/controllers/LandscapeController.js"></script>
-	</body>
-</html> 
+
+<script src="http://maps.googleapis.com/maps/api/js?sensor=false&language=en"></script>
+<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.0.2/angular.min.js"></script>
+<script src="lib/jquery.js"></script>
+<script src="lib/bootstrap.js"></script>
+
+<script src="lib/angular.js"></script>
+<script src="lib/angular-google-maps.js"></script>
+<script src="lib/app.js"></script>
+
+
+<script src="js/controllers/LandscapeController.js"></script>
+</body>
